@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1730727908 source:z:\s101\projet_s101\saesanhun_tests.cpp
+	<iostream>
+	<vector>
+	"SAESanhun.h"
+
+1730728736 z:\s101\projet_s101\saesanhun.h
+	<iostream>
+	<vector>
+
+1730713140 source:z:\s101\projet_s101\saesanhun.cpp
+	<iostream>
+	<vector>
+	"SAESanhun.h"
+
+1730727891 source:z:\s101\projet_s101\fonctions.cpp
+	<iostream>
+	<vector>
+	"SAESanhun.h"
+
