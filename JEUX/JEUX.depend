@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1730709884 source:z:\projet\jeux\saesanhun.cpp
+	<iostream>
+	<vector>
+	"joueur.h"
+	"SAESfunction.h"
+
+1730714080 z:\projet\jeux\joueur.h
+	<iostream>
+	<vector>
+
+1730712841 z:\projet\jeux\saesfunction.h
+	<iostream>
+	<vector>
+
+1730727199 source:z:\projet\jeux\saesanhun_tests.cpp
+	<iostream>
+	<vector>
+	"joueur.h"
+	"SAEFunction.h"
+
+1730727697 z:\projet\jeux\saefunction.h
+	<iostream>
+	<vector>
+
+1730727649 source:z:\projet\jeux\saefunction.cpp
+	<iostream>
+	<vector>
+	"SAEFunction.h"
+
