@@ -4,6 +4,15 @@
 
 using namespace std;
 
+void display_vector_int(const vector<int> &vect){
+    //Affiche un vecteur d'entiers
+    cout << "{";
+    for (int i=0;i<vect.size()-1;i++){
+        cout << vect[i] << ",";
+    }
+    cout << vect.back() << "}" << endl;
+}
+
 int somme_entiers(const vector<int> &vect){
     //Retourne la somme des entiers d'un vector<int> donné en paramètres
     int somme=0;
@@ -76,8 +85,7 @@ void affiche(const vector<int> &sentier,const vector<int> &sac1,const vector<int
         cout << ARTEFACT[i] << "\t\t" << " " << sac1[i] << "\t " << sac2[i] << endl;
     }
     cout << "\n\n";
-    cout << "C'est le tour du joueur " << tour << endl;
-    cout << endl;
+
 }
 
 int score(const vector<int> &sac1,const vector<int> &sac2){
@@ -94,3 +102,54 @@ int score(const vector<int> &sac1,const vector<int> &sac2){
 }
 
 
+void jeu(vector<int> &sentier, int &pos1, int &pos2, vector<int> &sac1, vector<int> &sac2){
+    if (verification_init(sentier)){
+        while(pos1>0&&pos2>0){
+             // variable pour les deplacements des joueurs
+            int step = 0;
+            cout << "Tour du joueur 1" << endl;
+            affiche(sentier,sac1,sac2,pos1,pos2,1);
+            // tour du joueur 1
+            cout << "Le joueur 1 avance de combien de cases ? ";
+            cin >> step;
+            if (pos1-step==pos2){
+                step+=1;
+            }
+            pos1 = max(0, pos1 - step);
+
+            // prend l'objet si possible
+            if (sentier[pos1] != 0) {
+                int objet = sentier[pos1];
+                sac1[objet] += 1;       // Ajoute l'objet au sac du joueur 1
+                sentier[pos1] = 0;     // Retire l'objet du sentier
+                cout << "Joueur 1 ramasse " << ARTEFACT[objet] << "." << endl;
+            }
+
+            // tour du joueur 2
+            cout << "Tour du joueur 2" << endl;
+            affiche(sentier,sac1,sac2,pos1,pos2,2);
+            cout << "Le joueur 2 avance de combien de cases ? ";
+            cin >> step;
+            if (pos2-step==pos1){
+                step+=1;
+            }
+            pos2 = max(0, pos2 - step);
+
+            // prend l'objet si possible
+            if (sentier[pos2] != 0) {
+                int objet = sentier[pos2];
+                sac2[objet] += 1;       // Ajoute l'objet au sac du joueur 2
+                sentier[pos2] = 0;     // Retire l'objet du sentier
+                cout << "Joueur 2 ramasse " << ARTEFACT[objet] << "." << endl;
+            }
+        }
+        cout << "Fin de la partie." << endl;
+        cout << "Calcul des scores :" << endl;
+        cout << "Sac du joueur 1 : ";
+        display_vector_int(sac1);
+        cout << "Sac du joueur 2 : ";
+        display_vector_int(sac2);
+        cout << "Score du joueur 1 : " << score(sac1,sac2) << endl;   //resultat attendu : 9
+        cout << "Score du joueur 2 : " << score(sac2,sac1) << endl;
+    }
+}

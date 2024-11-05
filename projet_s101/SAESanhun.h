@@ -25,4 +25,11 @@ int score(const vector<int> &sac1,const vector<int> &sac2);
 bool verification_init(const vector<int> &sentier);
 //Vérifie la bonne initialisation du sentier
 
+void jeu(vector<int> &sentier, int &pos1, int &pos2, vector<int> &sac1, vector<int> &sac2);
+//Fonction principale, lance le jeu
+
+void display_vector_int(const vector<int> &vect);
+//Affiche un vecteur d'entiers
+
+
 #endif // SAESANHUN_H_INCLUDED

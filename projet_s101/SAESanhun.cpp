@@ -12,5 +12,6 @@ int main() {
 	pos1 = pos2 = sentier.size();
     vector<int> sac1(NBARTEFACT,0);
     vector<int> sac2(NBARTEFACT,0);
+    jeu(sentier,pos1,pos2,sac1,sac2);
     return 0;
 }

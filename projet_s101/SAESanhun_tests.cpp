@@ -1,13 +1,5 @@
 #include "SAESanhun.h"
 
-void display_vector_int(const vector<int> &vect){
-    //Affiche un vecteur d'entiers
-    cout << "{";
-    for (int i=0;i<vect.size()-1;i++){        cout << vect[i] << ",";
-    }
-    cout << vect.back() << "}" << endl;
-}
-
 void test_somme_entiers(){
     cout << "Test de la fonction somme_entiers" << endl;
     cout << "\tSomme d'entiers positifs : {2,1,0,7}" << endl;
