@@ -1,3 +1,5 @@
+Judicael et Oumayma Torkhani
+
 Le dossier du projet contient :
 - un fichier source SAESanhun.cpp qui contient la fonction principale et qui permet de lancer le jeu
 - un fichier de test SAESanhun_tests.cpp qui contient les tests des différentes des sous-programmes
@@ -7,3 +9,4 @@ Le dossier du projet contient :
 
 Lorsque la boucle de jeu est lancée, le joueur doit entrer le nombre de cases dont il veut avancer. Le sentier et les sacs sont affichés au début du tour de chaque joueur.
 Si un joueur choisit une case où il y a déjà l'autre joueur, il avance d'une case de plus.
+Le nombre de cases à parcourir pour arriver sur la case de l'autre joueur est égal à 0, mais les cases suivantes (juste après l'autre joueur) n'ont pas la bonne valeur (il faurait ajouter 1).
