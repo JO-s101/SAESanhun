@@ -4,3 +4,5 @@ Le dossier du projet contient :
 - un header SAESanhun.h qui contient les prototypes des sous-programmes
 - un header joueurs.h qui contient
 - un fichier source fonctions.cpp qui contient les définitions des sous-programmes
+
+Lorsque la boucle de jeu est lancée, le joueur doit entrer le nombre de cases dont il veut avancer. Le sentier et les sacs sont affichés au début du tour de chaque joueur.
