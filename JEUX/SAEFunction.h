@@ -1,5 +1,5 @@
-#ifndef SAESANHUN_H_INCLUDED
-#define SAESANHUN_H_INCLUDED
+#ifndef SAEFUNCTION_H_INCLUDED
+#define SAEFUNCTION_H_INCLUDED
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -25,4 +25,7 @@ int score(const vector<int> &sac1,const vector<int> &sac2);
 bool verif(vector<int> &sentier, vector<string> &ARTEFACT, vector<int> &QUANTITE);
 //Vérifie la bonne initialisation du sentier
 
-#endif // SAESANHUN_H_INCLUDED
+void jeu(vector<int> &sentier, const vector<string> &ARTEFACT, int &pos1, int &pos2, vector<int> &sac1, vector<int> &sac2);
+
+
+#endif

@@ -32,9 +32,6 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Linker>
-			<Add library="C:/Users/e098-jto/Downloads/Ressources-20241104/libjoueurs.a" />
-		</Linker>
 		<Unit filename="SAEFunction.cpp" />
 		<Unit filename="SAEFunction.h" />
 		<Unit filename="SAESanhun.cpp">
@@ -43,9 +40,7 @@
 		<Unit filename="SAESanhun_tests.cpp">
 			<Option target="Debug" />
 		</Unit>
-		<Unit filename="joueur.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="joueurs.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

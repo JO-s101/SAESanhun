@@ -5,7 +5,7 @@
 	"joueur.h"
 	"SAESfunction.h"
 
-1730714080 z:\projet\jeux\joueur.h
+1730731405 z:\projet\jeux\joueur.h
 	<iostream>
 	<vector>
 
@@ -13,18 +13,22 @@
 	<iostream>
 	<vector>
 
-1730727199 source:z:\projet\jeux\saesanhun_tests.cpp
+1730813613 source:z:\projet\jeux\saesanhun_tests.cpp
 	<iostream>
 	<vector>
-	"joueur.h"
+	"joueurs.h"
 	"SAEFunction.h"
 
-1730727697 z:\projet\jeux\saefunction.h
+1730812918 z:\projet\jeux\saefunction.h
 	<iostream>
 	<vector>
 
-1730727649 source:z:\projet\jeux\saefunction.cpp
+1730813613 source:z:\projet\jeux\saefunction.cpp
 	<iostream>
 	<vector>
 	"SAEFunction.h"
+
+1730731405 z:\projet\jeux\joueurs.h
+	<iostream>
+	<vector>
 
