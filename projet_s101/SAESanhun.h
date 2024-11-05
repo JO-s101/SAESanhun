@@ -17,9 +17,12 @@ void affiche(const vector<int> &sentier,const vector<int> &sac1,const vector<int
 //void joueurN(vector<int> &sentier,const vector<int> &valeur,const vector<int> &j1,vector<int> &j2,int pos1, int &pos2);
 
 int somme_entiers(const vector<int> &vect);
-//Retourne la somme des entiers d'un vector<int> donné en paramètres
+//Retourne la somme des entiers d'un vector<int> donnÃ© en paramÃ¨tres
 
-int score(const vector<int> &sac1,const vector<int> &sac2)
+int score(const vector<int> &sac1,const vector<int> &sac2);
 //Retourne le score du joueur dont le sac est en premier argument
+
+bool verification_init(const vector<int> &sentier);
+//VÃ©rifie la bonne initialisation du sentier
 
 #endif // SAESANHUN_H_INCLUDED

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "SAESanhun.h"
+
 using namespace std;
 
 int main() {
@@ -11,11 +12,5 @@ int main() {
 	pos1 = pos2 = sentier.size();
     vector<int> sac1(NBARTEFACT,0);
     vector<int> sac2(NBARTEFACT,0);
-
-    vector<int> vect1={0,2,4,-6,9};
-    cout << somme_entiers(vect1) << endl;
-
-
-
     return 0;
 }
