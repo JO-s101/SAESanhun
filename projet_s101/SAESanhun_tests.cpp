@@ -1,4 +1,5 @@
 #include "SAESanhun.h"
+#include "joueurs.h"
 
 void test_somme_entiers(){
     cout << "Test de la fonction somme_entiers" << endl;
