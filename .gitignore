@@ -1,5 +1,5 @@
-.depend
-.layout
-.cbp
+*.depend
+*.layout
+*.cbp
 bin/
 obj/
