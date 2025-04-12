@@ -1,4 +1,4 @@
-Judicael et Oumayma Torkhani
+Judicael et Oumayma
 
 Le dossier du projet contient :
 - un fichier source SAESanhun.cpp qui contient la fonction principale et qui permet de lancer le jeu
